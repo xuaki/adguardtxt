@@ -1,0 +1,280 @@
+/** * comments */
+.respond {
+    padding: 1.5rem;
+}
+.comments #response {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+}
+.comments form {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.comments .option input {
+    display: block;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: auto;
+    min-width: 24rem;
+    outline: none;
+    font-size: 0.9rem;
+    letter-spacing: .2rem;
+    transition: all .6s ease-out;
+    border-radius: .5rem;
+    border: solid .1rem var(--border);
+}
+.comments .textarea {
+    padding: .5rem 1rem;
+    margin: 1.5rem 0;
+    min-width: 24rem;
+    display: block;
+    outline: none;
+    font-size: 0.9rem;
+    font-family: inherit;
+    letter-spacing: .2rem;
+    border-radius: .5rem;
+    border: solid .1rem var(--border);
+    transition: all .6s ease-out;
+    width: 100%;
+}
+.comments-row {
+    margin-top: 3rem;
+}
+.comments-toolbar {
+    position: relative;
+}
+.comments-toolbar .option {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.comments .option button {
+    padding: .8rem 1.5rem;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--theme-color);
+    border: none;
+    border-radius: .5rem;
+    transition: all .3s ease-out;
+}
+#comments .comment-list {
+    padding: 0;
+    margin: 0;
+}
+li.comment-by-author > .comment-author span:after {
+    content: '';
+    position: absolute;
+    height: 1.8rem;
+    width: 1.8rem;
+    right: -.5rem;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAmVBMVEVHcEz/////////////////////////////////////////////////////////////////////////////////////uCD/////wTv/0nD//fn/9+b/uyr/8tf/89r/yFP/uiX/wkD/3JP/+u7/2Yj/yVf/14H/9d//vC3/xUn/5rD/1Hf/35r/6r7/zWH/0Gv/4aD/vjP/7cgz761DAAAAFnRSTlMAy2YKAzcb5vZcfPIRYPnsr9u3CU6PxtEgXAAAAg1JREFUSMedltmWqjAQRaOtQjuPtRFNCyJqtz3//8fdB0ErINrc8yQrFdeuStVJjClqNl9MJ6PhcDSZLuYz80D9wdhHyR8P+nfCn7o9Sup1nyrCW00PALtdpvF6HafLrQXAa7ZuxXcaAHYfiFKwtwCNTjm+7QGrpZS0XAFeuxj/7EO4i+SGol0I/nMhHkg2UqFNAjg72j7YQCoVWPAVVccDu5Y7WlvwLpm3GpAEcldBAo28uk0IN/JAmxCa2fl6sJOH2oF3PvMurKLHG6IVdI0xpt+D7LxeADi5KABbEZEl9PrGmAHYbHELwIez4RdIjiIiYmFgjBnDPlt8BSA8qvhPuGS4h7ExMx8uJT0z6YZ64ZphAP7MzK9EN5hOTlIW5maRpaSZ1royHCL1fwszdRAOAHyp2qsvWcLUTCCVAtNb9nVM0MCSwsSMIJYKpneAz+tqDCMzBN2nmikIgV/dszAsbnhXTG8Am+IGFylnivKfzrHHMCokLbIiB/8AeNVrKUwKZVVMqa6XKqtzcHl3kkRigdCdwy0s3NZQTF8A3+5IWJi7zaeYDkD44841+DOnvRUTl7m56tzeeoA003VuNNHAHdGzvvMNBWfIR7RkAjlTwRkuJlC2mYzpVGUzJSM7Mx2iKiMrWeUxjuM4/qm2ytpmXN/u618o9a+s+pdi/Wu3/sVe/+nwH4+Tvzx//gG7W6YbwRbnBgAAAABJRU5ErkJggg==);
+}
+#comments .comment-list > li {
+    position: relative;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    list-style-type: none;
+}
+#comments .comment-list > li + li {
+    border-top: var(--border) .1rem solid;
+}
+#comments .comment-children {
+    margin-left: 2rem;
+}
+
+#comments .comment-children li {
+    padding: 2rem 0 0 0;
+}
+
+#comments .comment-reply {
+    opacity: 0;
+}
+
+#comments .comment-list > li:hover > .comment-reply {
+    opacity: 1;
+}
+
+#comments .comment-list > li:hover {
+    background-color: rgb(245,248,250);
+}
+#comments .comment-list > li .comment-author {
+    display: flex;
+}
+#comments .comment-list > li .comment-author span {
+    position: relative;
+}
+#comments .comment-list > li .comment-author span img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+#comments .comment-list > li .comment-author cite {
+    padding-left: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+}
+#comments .comment-list > li .comment-meta {
+    margin-left: 5.5rem;
+    padding-bottom: .5rem;
+    margin-top: -2rem;
+}
+#comments .comment-list > li .comment-meta a {
+    font-size: 0.8rem;
+    color: #8f949e;
+}
+#comments .comment-list > li .comment-content {
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 1.4rem;
+}
+#comments .comment-list > li .comment-content p {
+    line-height: 1.8;
+    letter-spacing: .1rem;
+}
+#comments .comment-list > li .comment-reply, #comments .comment-list > li .cancel-comment-reply {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    padding: .6rem 1rem;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--theme-color);
+    border: none;
+    border-radius: .8rem;
+    transition: all .3s ease-out;
+}
+.comment-reply a, .cancel-comment-reply a {
+    color: white;
+}
+
+.secret {
+    background: repeating-linear-gradient(145deg, #f2f2f2, #f2f2f2 0.9375rem, #fff 0, #fff 1.875rem);
+    padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+    position: relative;
+}
+#secret-button {
+    display: none;
+}
+.secret-label {
+    position: relative;
+    display: inline-block;
+    width: 3.5rem;
+    height: 2rem;
+    background-color: #ccc;
+    border: 1rem solid #ccc;
+    border-radius: 1.8rem;
+    cursor: pointer;
+    margin-right: .5rem;
+}
+.secret-label .circle {
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    transition: all 0.3s;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--theme-color);
+}
+.secret-label .on {
+    color: #fff;
+    display: none;
+    text-indent: 0.625rem;
+}
+.secret-label .off {
+    color: #fff;
+    display: inline-block;
+    text-indent: 3.3125rem;
+}
+#secret-button:checked + label.secret-label .circle {
+    left: 1.1875rem;
+}
+#secret-button:checked + label.secret-label .on {
+    display: inline-block;
+}
+#secret-button:checked + label.secret-label .off {
+    display: none;
+}
+.comment-ua {
+    font-size: 1rem;
+    color: var(--text2);
+    margin-left: -1rem;
+}
+/* ua标识 */
+.ua-icon {
+    display: inline-block;
+    width: 1pc;
+    height: 1pc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: text-top
+}
+.icon-360 {
+    background-image: url('../img/ua/360.png')
+}
+.icon-android {
+    background-image: url('../img/ua/android.png');
+    height: 1.1875rem
+}
+.icon-apple {
+    background-image: url('../img/ua/apple.png')
+}
+.icon-baidu {
+    background-image: url('../img/ua/baidu.png')
+}
+.icon-chrome {
+    background-image: url('../img/ua/chrome.png')
+}
+.icon-edge {
+    background-image: url('../img/ua/edge.png')
+}
+.icon-firefox {
+    background-image: url('../img/ua/firefox.png')
+}
+.icon-google {
+    background-image: url('../img/ua/google.png')
+}
+.icon-ie {
+    background-image: url('../img/ua/ie.png')
+}
+.icon-liebao {
+    background-image: url('../img/ua/liebao.png')
+}
+.icon-linux {
+    background-image: url('../img/ua/linux.png')
+}
+.icon-mac {
+    background-image: url('../img/ua/mac.png')
+}
+.icon-opera {
+    background-image: url('../img/ua/opera.png')
+}
+.icon-qq {
+    background-image: url('../img/ua/qq.png')
+}
+.icon-quark {
+    background-image: url('../img/ua/quark.png')
+}
+.icon-safari {
+    background-image: url('../img/ua/safari.png')
+}
+.icon-ubuntu {
+    background-image: url('../img/ua/ubuntu.png')
+}
+.icon-uc {
+    background-image: url('../img/ua/uc.png')
+}
+.icon-win1 {
+    background-image: url('../img/ua/win1.png')
+}
+.icon-win2 {
+    background-image: url('../img/ua/win2.png')
+}
