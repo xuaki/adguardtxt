@@ -322,3 +322,15 @@
 ||kde.qq.com^$important,app=com.tencent.mtt
 ||report.nfa.qq.com^$important,app=com.tencent.mtt
 ||sdkapiv2.bizport.cn^$important,app=com.tencent.mtt
+||otheve.beacon.qq.com
+||mqqeve.beacon.qq.com
+||aegis.qq.com
+||h.trace.qq.com
+||report.nfa.qq.com
+||rpt.gdt.qq.com
+||h5.gdt.qq.com
+||v.gdt.qq.com
+||sdkreport.e.qq.com
+||sdk.e.qq.com
+||t.gdt.qq.com
+
